@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.padcmyanmar.padc7.hellocommonuielements.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="110"
+        android:title="Setting"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_portrait_black_24dp"/>
+
+    <item
+        android:id="@+id/action_home"
+        android:orderInCategory="110"
+        android:title="Home"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_home_white_24dp"
+        />
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="110"
+        android:title="Home"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_search_black_24dp"
+        />
+    <item
+        android:id="@+id/action_heart"
+        android:orderInCategory="110"
+        android:title="Home"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_favorite_border_black_24dp"
+        />
+    <item
+        android:id="@+id/action_match"
+        android:orderInCategory="110"
+        android:title="Home"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_portrait_black_24dp"
+        />
+
+</menu>

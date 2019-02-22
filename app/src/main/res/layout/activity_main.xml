@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_header"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:background="@drawable/background">
+
+                <ImageView
+                    android:id="@+id/iv_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:layout_marginEnd="@dimen/margin_medium_2"
+                    android:src="@drawable/ic_notifications_none_black_24dp" />
+
+                <RelativeLayout
+                    android:id="@+id/ll_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_notification"
+                    android:layout_marginStart="@dimen/margin_medium_2"
+
+                    android:layout_marginTop="@dimen/margin_medium_2">
+
+                    <ImageView
+                        android:id="@+id/iv_logo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_newyork" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/iv_logo"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/what_s_good_in"
+                            android:textColor="@color/text_color_white"
+                            android:textSize="@dimen/text_regular_3x" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_medium_2"
+                            android:text="@string/new_york"
+                            android:textColor="@color/text_color_white"
+                            android:textSize="@dimen/text_big"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_event_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_medium_2"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginEnd="@dimen/margin_medium_2"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    <!-- <include
+         layout="@layout/view_event_list_item"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="@dimen/margin_medium_2"
+         android:layout_marginTop="-300dp"
+         android:layout_marginEnd="@dimen/margin_medium_2"
+         app:layout_anchor="@id/rl_header"
+         app:layout_anchorGravity="center"
+         app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+    <!-- <android.support.design.bottomappbar.BottomAppBar
+         android:id="@+id/bab"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="bottom"
+         android:backgroundTint="@color/primary"
+         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+     </android.support.design.bottomappbar.BottomAppBar>-->
+</RelativeLayout>
