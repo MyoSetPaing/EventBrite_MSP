@@ -19,12 +19,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Porpular in New York"
-                android:textSize="@dimen/text_heading_1x" />
+                android:textSize="@dimen/text_heading_1x"
+                android:textStyle="bold"/>
+
 
             <android.support.v7.widget.CardView
                 android:id="@+id/iv_logo"
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="200dp"
                 android:layout_below="@+id/tv_header"
                 android:layout_marginTop="@dimen/margin_large"
                 android:elevation="@dimen/margin_medium"
@@ -37,25 +39,6 @@
                     android:src="@drawable/event_image" />
             </android.support.v7.widget.CardView>
 
-            <android.support.design.widget.FloatingActionButton
-                android:id="@+id/fab_fav"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/iv_logo"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="@dimen/margin_large_n"
-                android:layout_marginEnd="@dimen/margin_large"
-                android:src="@drawable/ic_favorite_border_black_24dp" />
-
-            <android.support.design.widget.FloatingActionButton
-                android:id="@+id/fab_share"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/iv_logo"
-                android:layout_marginTop="@dimen/margin_large_n"
-                android:layout_marginRight="@dimen/margin_medium"
-                android:layout_toStartOf="@+id/fab_fav"
-                android:src="@drawable/ic_share_black_24dp" />
 
         </RelativeLayout>
 
@@ -64,6 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_large"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -115,13 +99,13 @@
             android:orientation="horizontal">
 
             <android.support.v7.widget.CardView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 app:cardCornerRadius="@dimen/margin_medium">
 
                 <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:scaleType="fitXY"
                     android:src="@drawable/img3" />
             </android.support.v7.widget.CardView>
@@ -135,7 +119,6 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/margin_medium"
                     android:text="FREE TICKETS! Hilarious Comedy"
                     android:textSize="@dimen/text_regular_2x" />
 
@@ -160,9 +143,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
                         android:layout_marginTop="@dimen/margin_medium"
-                        android:text="Broadway Comedy Club"
-                        android:textAlignment="center" />
+                        android:text="Broadway Comedy Club" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -181,13 +164,13 @@
             android:orientation="horizontal">
 
             <android.support.v7.widget.CardView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 app:cardCornerRadius="@dimen/margin_medium">
 
                 <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:scaleType="fitXY"
                     android:src="@drawable/event_image" />
             </android.support.v7.widget.CardView>
@@ -201,7 +184,6 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/margin_medium"
                     android:text="FREE TICKETS! Hilarious Comedy"
                     android:textSize="@dimen/text_regular_2x" />
 
@@ -226,9 +208,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
                         android:layout_marginTop="@dimen/margin_medium"
-                        android:text="Broadway Comedy Club"
-                        android:textAlignment="center" />
+                        android:text="Broadway Comedy Club" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -246,13 +228,13 @@
             android:orientation="horizontal">
 
             <android.support.v7.widget.CardView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 app:cardCornerRadius="@dimen/margin_medium">
 
                 <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:scaleType="fitXY"
                     android:src="@drawable/img3" />
             </android.support.v7.widget.CardView>
@@ -266,7 +248,6 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/margin_medium"
                     android:text="FREE TICKETS! Hilarious Comedy"
                     android:textSize="@dimen/text_regular_2x" />
 
@@ -291,9 +272,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
                         android:layout_marginTop="@dimen/margin_medium"
-                        android:text="Broadway Comedy Club"
-                        android:textAlignment="center" />
+                        android:text="Broadway Comedy Club" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -315,19 +296,37 @@
                 android:text="See more events like this"
                 android:textAlignment="center"
                 android:textSize="@dimen/text_regular_2x"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
         </RelativeLayout>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:background="@color/divider"
-            android:layout_marginTop="@dimen/margin_medium_3"
             android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_3"
             android:layout_marginEnd="@dimen/margin_medium"
             android:layout_marginBottom="@dimen/margin_medium_3"
-            />
+            android:background="@color/divider" />
 
     </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:src="@drawable/ic_favorite_border_black_24dp"
+        app:layout_anchor="@id/iv_logo"
+        app:layout_anchorGravity="right|bottom" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="84dp"
+        android:src="@drawable/ic_share_black_24dp"
+        app:layout_anchor="@id/iv_logo"
+        app:layout_anchorGravity="right|bottom" />
 
 </android.support.design.widget.CoordinatorLayout>

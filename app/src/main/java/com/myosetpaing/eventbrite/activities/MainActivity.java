@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements EventDelegate {
                 LinearLayoutManager.VERTICAL, false));
         EventListRecyclerViewAdapter adapter=new EventListRecyclerViewAdapter(this);
         recyclerView.setAdapter(adapter);
+        recyclerView.setNestedScrollingEnabled(false);
     }
 
     @Override
